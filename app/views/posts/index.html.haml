@@ -1,0 +1,36 @@
+%ul.hmenu
+  = render 'shared/navigation'
+  - flash.each do |name, msg|
+    - if msg.is_a?(String)
+      = content_tag :div, msg, :id => "flash_#{name}"
+
+%h1 Listing posts
+
+%table
+  %tr
+    %th Name
+    %th Title
+    %th Content
+    %th Image
+    %th
+    %th
+    %th
+
+  - @posts.each do |post|
+    %tr
+      %td= post.name
+      %td= post.title
+      %td= post.content
+      %td= post.image
+      %td= link_to 'Show', post
+      %td= link_to 'Edit', edit_post_path(post)
+      %td= link_to 'Destroy', post, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Post', new_post_path
+
+
+- @users.each do |user|
+  %p
+    User: #{link_to user.name, user}

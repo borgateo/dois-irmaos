@@ -1,8 +1,11 @@
 Rails3MongoidDevise::Application.routes.draw do
 
-  devise_for :users
-
   root :to => "home#index"
+
+  devise_for :users
+  resources :users
+
+  resources :posts
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -1,0 +1,15 @@
+%h1 
+  Home
+
+- @posts.each do |post|
+  #{post.name}
+  #{post.title}
+  #{post.content}
+  #{post.image}
+  #{link_to 'Show', post}
+  #{link_to 'Edit', edit_post_path(post)}
+  #{link_to 'Destroy', post, :method => :delete, :data => { :confirm => 'Are you sure?' } }
+
+
+%p
+  #{link_to "Post it", posts_path}
