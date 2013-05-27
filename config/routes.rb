@@ -1,4 +1,4 @@
-Rails3MongoidDevise::Application.routes.draw do
+FattiEPupe::Application.routes.draw do
 
   root :to => "home#index"
 
