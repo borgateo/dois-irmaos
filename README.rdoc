@@ -1,3 +1,8 @@
 == Fatti e Pupe
 
 un progetto in via di sviluppo
+
+--
+
+DB: Mongoid - MongoDB simplifies development by eliminating the schemas and migrations
+Autotenticazione: Devise

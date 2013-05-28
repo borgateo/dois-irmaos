@@ -1,3 +1,13 @@
+<% if ENV['MONGOHQ_URL'] %>
+  production:
+    sessions:
+      default:
+        uri: <%= ENV['MONGOHQ_URL'] %>
+        options:
+          skip_version_check: true
+          safe: true
+<% end %>
+
 development:
   # Configure available database sessions. (required)
   sessions:
@@ -5,7 +15,7 @@ development:
     default:
       # Defines the name of the default database that Mongoid can connect to.
       # (required).
-      database: rails3_mongoid_devise_development
+      database: fatti_e_pupe
       # Provides the hosts the default session can connect to. Must be an array
       # of host:port pairs. (required)
       hosts:
