@@ -7,9 +7,9 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 puts '---- SETTING UP DEFAULT USER LOGIN ----'
-user = User.create! :name => ENV['ADMIN_NAME'], :email => ENV['ADMIN_EMAIL'], :password => ENV['ADMIN_PASSWORD'], :password_confirmation => ENV['ADMIN_PASSWORD']
+user = User.create! :name => ENV['ADMIN_NAME'].dup, :email => ENV['ADMIN_EMAIL'].dup, :password => ENV['ADMIN_PASSWORD'].dup, :password_confirmation => ENV['ADMIN_PASSWORD'].dup
 puts 'New user created: ' << user.name
 
-user2 = User.create! :name => ENV['ADMIN2_NAME'], :email => ENV['ADMIN2_EMAIL'], :password => ENV['ADMIN2_PASSWORD'], :password_confirmation => ENV['ADMIN2_PASSWORD']
+user2 = User.create! :name => ENV['ADMIN2_NAME'].dup, :email => ENV['ADMIN2_EMAIL'].dup, :password => ENV['ADMIN2_PASSWORD'].dup, :password_confirmation => ENV['ADMIN2_PASSWORD'].dup
 puts 'New user created: ' << user2.name
 puts '---- Done! ----'
