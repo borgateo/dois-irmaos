@@ -17,6 +17,8 @@ SofiaProLight-webfont.woff: SofiaProLight-webfont-b31e8596dc074629ae32231bdaa5b3
 SofiaProLight-webfont/index.woff: SofiaProLight-webfont-b31e8596dc074629ae32231bdaa5b3ec.woff
 application.js: application-5718d81f68792a334ca01828646c4d3d.js
 application/index.js: application-5718d81f68792a334ca01828646c4d3d.js
+polyfills.js: polyfills-49a8fd6d5dc3e14f8e1666aeaa2acd49.js
+polyfills/index.js: polyfills-49a8fd6d5dc3e14f8e1666aeaa2acd49.js
 application.css: application-43bcca43a8bb010dd864be9fc038d492.css
 application/index.css: application-43bcca43a8bb010dd864be9fc038d492.css
 jquery.min.map: jquery.min-6c267bfd2b3f36e6edccb2e584934c1c.map

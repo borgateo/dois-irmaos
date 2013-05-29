@@ -28,6 +28,8 @@ module FattiEPupe
     # Font-face
     config.assets.paths << "#{Rails.root}/app/assets/fonts"
 
+    config.assets.precompile += %w( polyfills.js )
+
     # Only load the plugins named here, in the order given (default is alphabetical).
     # :all can be used as a placeholder for all plugins not explicitly named.
     # config.plugins = [ :exception_notification, :ssl_requirement, :all ]
