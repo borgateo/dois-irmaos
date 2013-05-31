@@ -1,24 +1,13 @@
-#layout.pure-g-r
+%a#menuLink.pure-menu-link{:href => "#menu"}
+  = image_tag("navicon.png", :class => "icon", :width => '20', :alt => "+")
 
-  %a#menuLink.pure-menu-link{:href => "#menu"}
-    = image_tag("navicon.png", :class => "icon", :width => '20', :alt => "+")
-
-  #menu.pure-u
-    .pure-menu.pure-menu-open
-      %a.pure-menu-heading{:href => "/"} Cerca
-      %ul
-        %li
-          %a{:href => "/base/"} Dettagli
-        %li
-          %a{:href => "/grids/"} Contatto
-        %li
-          %a{:href => "/grids/"} Iscriviti
-
-
-  #main.pure-u    
-    .header.pure-u-1
-      %h1.pure-u-1
-        Fatti per/da uomini.com
-
-      %h2.pure-u
-        \...o Fatti e Pupe?
+#menu.pure-u
+  .pure-menu.pure-menu-open
+    %a.pure-menu-heading{:href => "/"} Cerca
+    %ul
+      %li
+        %a{:href => "/base/"} Dettagli
+      %li
+        %a{:href => "/grids/"} Contatto
+      %li
+        %a{:href => "/grids/"} Iscriviti

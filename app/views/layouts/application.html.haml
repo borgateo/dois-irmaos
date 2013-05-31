@@ -4,12 +4,14 @@
 
   %body{ :class => "#{ controller.controller_name }" }
     = render 'chromeframe'
-    = render 'header'
-    = render 'flashes'
 
-    = yield
+    #layout.pure-g-r
+      = render 'flashes'
+      = render 'header'
 
-    = render 'footer'
+      = yield
+
+      = render 'footer'
 
     -# Javascript at the bottom for fast page loading
     = render 'javascripts'
