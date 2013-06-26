@@ -1,6 +1,18 @@
-.container
-  .row.section-intro
+%section#map
+  .container
+    .row-fluid
+      %h3 O Arraiá do Parque Dois Irmãos localiza-se na
 
-    %h1 Localicatoij
-
-    %p Find me in app/views/pages/evento.html.haml
+    .row-fluid
+      .span6
+        #map-canvas
+        
+      .span6.localization.text-center
+        .tk-acta-display.well
+          %img{:alt => "Support local sellers", :height => "91px", :src => "http://www.farmly.net/images/local.png", :width => "91px"}/
+          %p
+            Praça 1&deg; de Maio
+          %p
+            Rua Afonso Lopes com Rua José Pedra
+          %p
+            Bairro Parque Dois Irmãos

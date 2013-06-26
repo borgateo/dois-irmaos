@@ -1,28 +1,25 @@
-var menu = document.getElementById('menu');
-var menuLink = document.getElementById('menuLink');
-var layout = document.getElementById('layout');
 
-var toggleClass = function (element, className) {
-  var classes = element.className.split(/\s+/),
-  length = classes.length,
-  i = 0;
-
-  for(; i < length; i++) {
-    if (classes[i] === className) {
-      classes.splice(i, 1);
-      break;
-    }
+function initialize() {
+  var myLatlng = new google.maps.LatLng(-3.797036, -38.549854);
+  var mapOptions = {
+    zoom: 18,
+    center: myLatlng,
+    panControl: false,
+    zoomControl: true,
+    mapTypeControl: false,
+    scaleControl: true,
+    streetViewControl: false,
+    overviewMapControl: false,
+    mapTypeId: google.maps.MapTypeId.HYBRID
   }
-  // The className is not found
-  if (length === classes.length) {
-    classes.push(className);
-  }
-    element.className = classes.join(' ');
-  };
+  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
-menuLink.onclick = function (e) {
-  e.preventDefault();
-  var active = 'active';
-  toggleClass(layout, active);
-  toggleClass(menu, active);
-}; 
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Arraiá do Parque Dois Irmãos'
+  });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+

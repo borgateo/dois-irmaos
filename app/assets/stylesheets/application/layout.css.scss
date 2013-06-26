@@ -229,6 +229,11 @@ nav .selected {
     font-size: 8em;
     line-height: 1em;
 }
+.medium {
+    color: #3C3C3C;
+    font-size: 4em;
+    line-height: 1em;
+}
 
 #contacts p {
     font-weight: 200;
@@ -237,6 +242,25 @@ nav .selected {
     padding-left: 50px;
     font-size: 1.2em;
 }
+#map p {
+    font-weight: 200;
+    height: 20px;
+    line-height: 20px;
+    font-size: 1.2em;
+}
+#map-canvas {
+    height: 300px;
+    width: 100%;
+}
+
+.localization .well {
+    height: 260px;
+}
+
+.localization .well img {
+    margin-bottom: 30px;
+}
+
 .email {
     background: url(/assets/envelop.png) center left no-repeat;
 }
