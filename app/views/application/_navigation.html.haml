@@ -1,0 +1,13 @@
+.content
+  %nav
+    %ul.tk-arvo
+      %li{:class => "#{current_page?(evento_path) ? 'selected' : ''}" }
+        = link_to "Evento", evento_path
+      %li{:class => "#{current_page?(programacao_path) ? 'selected' : ''}" }
+        = link_to "Programação", programacao_path
+      %li{:class => "#{current_page?(multimidia_path) ? 'selected' : ''}" }
+        = link_to "Multimídia", multimidia_path
+      %li{:class => "#{current_page?(localizacao_path) ? 'selected' : ''}" }
+        = link_to "Localização", localizacao_path
+      %li{:class => "#{current_page?(contato_path) ? 'selected' : ''}" }
+        = link_to "Contato", contato_path

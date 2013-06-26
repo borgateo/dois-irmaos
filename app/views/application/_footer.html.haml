@@ -1,3 +1,47 @@
-%footer#footer
-  %small.copyright
-    Fatti E Pupe, Copyright &copy; #{ Date.today.year }
+%footer.footer.clearfix
+  .top-footer
+  .container
+    .row-fluid
+      .span6
+        .row-fluid
+          %ul.span3.nav.nav-list
+            %li.nav-header Arraiá do Parque Dois Irmãos
+            %li
+              %a{:href => "http://www.farmly.net/"} Home
+            %li
+              %a{:href => "http://www.farmly.net/about"} About Us
+            %li
+              %a{:href => "http://www.farmly.net/about/#contact"} Contact
+            %li
+              %a{:href => "http://blog.farmly.net"} Blog
+          %ul.span4.nav.nav-list
+            %li.nav-header Legal
+            %li
+              %a{:href => "http://www.farmly.net/privacy"} Privacy Policy
+        / row fluid end
+      / span6 end
+      #tweets.span6.pull-right
+    / row end
+    %hr/
+    .row-fluid.footer-bottom
+      %p.span4.pull-left Copyright &copy; #{ Date.today.year }
+      %p.text-right.span4.pull-right
+        Made by
+        %a{:href => "http://www.matteoborgato.com"} Borteo
+    / row end
+  / container end
+/ footer end
+:javascript
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31162904-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+%script{:src => "//use.typekit.net/mor8rre.js", :type => "text/javascript"}
+:javascript
+  try{Typekit.load();}catch(e){}

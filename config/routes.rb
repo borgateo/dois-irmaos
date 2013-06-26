@@ -1,11 +1,19 @@
 FattiEPupe::Application.routes.draw do
 
+  get "pages/evento"
+
   root :to => "home#index"
 
   devise_for :users
   resources :users
 
   resources :posts
+
+  match '/evento'       => "pages#evento"
+  match '/programacao'  => "pages#programacao"
+  match '/multimidia'   => "pages#multimidia"
+  match '/localizacao'  => "pages#localizacao"
+  match '/contato'      => "pages#contato"
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

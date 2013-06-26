@@ -7,7 +7,13 @@
 
     #layout.pure-g-r
       = render 'flashes'
-      = render 'header'
+
+      -if controller.controller_name == "home"
+        = render 'header-home'
+      -else
+        = render 'header'
+
+      = render 'navigation'
 
       = yield
 

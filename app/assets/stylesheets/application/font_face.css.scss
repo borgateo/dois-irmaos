@@ -24,4 +24,13 @@
          asset-url('SofiaProLight-webfont.svg#BPreplayRegular', font) format('svg');
 }
 
-
+@font-face {
+    font-family: 'ChunkFive';
+    src: url('Chunkfive-webfont.eot', font);
+    src: url('Chunkfive-webfont.eot?#iefix', font) format('embedded-opentype'),
+         url('Chunkfive-webfont.woff', font) format('woff'),
+         url('Chunkfive-webfont.ttf', font) format('truetype'),
+         url('Chunkfive-webfont.svg#ChunkFiveRegular', font) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
