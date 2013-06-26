@@ -8,11 +8,15 @@
         #map-canvas
         
       .span6.localization.text-center
-        .tk-acta-display.well
-          %img{:alt => "Support local sellers", :height => "91px", :src => "http://www.farmly.net/images/local.png", :width => "91px"}/
+        .tk-acta-display.paper-box
+          %img#marker{:alt => "Support local sellers", :src => "/assets/marker.png"}/
           %p
             Praça 1&deg; de Maio
           %p
             Rua Afonso Lopes com Rua José Pedra
           %p
             Bairro Parque Dois Irmãos
+
+- content_for(:maps) do
+  %script{:src => "https://maps.googleapis.com/maps/api/js?key=AIzaSyAlpCTU0WChVyDmdDAEqr5k39Gc9R-vNJ0&sensor=false", :type => "text/javascript"}
+  = javascript_include_tag :maps

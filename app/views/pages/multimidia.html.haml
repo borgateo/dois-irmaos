@@ -3,4 +3,15 @@
 
     %h1 Evento
 
-    %p Find me in app/views/pages/evento.html.haml
+
+    %a.fancybox{"data-fancybox-group" => "thumb", :href => "/assets/1_b.jpg"}
+      %img{:alt => "", :src => "/assets/1_s.jpg"}/
+    %a.fancybox{"data-fancybox-group" => "thumb", :href => "/assets/2_b.jpg"}
+      %img{:alt => "", :src => "/assets/2_s.jpg"}/
+
+
+- content_for(:fancybox) do
+  = javascript_include_tag :fancybox
+  = javascript_include_tag :fancybox_thumbs
+  = javascript_include_tag :fancybox_init
+
