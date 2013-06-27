@@ -2,10 +2,10 @@
 Main Styles
 ----------------------*/
 
-body {
+body, html {
     color: #4f4f4f;
     position: relative;
-    background: url(/assets/fabric_plaid.png);
+    background: url(/assets/fabric_plaid.png) top left repeat;
 }
 
 .preload * {
@@ -30,12 +30,7 @@ header {
     height: 1em;
     background: url(/assets/zigzag.png) bottom left repeat-x;
     bottom: -12px;
-}
-
-header.fix {
-    position: fixed;
-    z-index: 999;
-    top: 0;
+    z-index: 10;
 }
 
 .banner,
@@ -124,42 +119,7 @@ header.fix {
     -webkit-animation: swinging 4s infinite ease-in-out;
     -webkit-transform-origin: right;
 }
- 
-@keyframes swinging {
-    0% { 
-        transform: rotate(0deg);
-    }
-    30% { 
-        transform: rotate(3deg);
-    }
-    100% { 
-        transform: rotate(0deg);
-    }
-}
 
-@-moz-keyframes swinging {
-    0% { 
-        -moz-transform:rotate(0deg);
-    }
-    30% { 
-        -moz-transform: rotate(3deg);
-    }
-    100% { 
-        -moz-transform:rotate(0deg);
-    }
-}
-
-@-webkit-keyframes swinging {
-    0% { 
-        -webkit-transform:rotate(0deg);
-    }
-    30% { 
-        -webkit-transform: rotate(3deg);
-    }
-    100% { 
-        -webkit-transform:rotate(0deg);
-    }
-}
 
 nav {
     width: 100%;
@@ -214,17 +174,6 @@ nav .selected {
     margin: 0 auto;
     max-width: 803px;
     min-width: 350px
-}
-
-.huge {
-    color: #3C3C3C;
-    font-size: 8em;
-    line-height: 1em;
-}
-.medium {
-    color: #3C3C3C;
-    font-size: 4em;
-    line-height: 1em;
 }
 
 #contacts p {
@@ -314,6 +263,7 @@ h3.day {
     @include text-shadow(rgba(0,0,0,0.2) 1px 2px 0);
     position: absolute;
     left: -10px;
+    top: -30px;
 }
 
 .paper-box {
@@ -332,6 +282,9 @@ h3.day {
     }
 }
 
+#event .paper-box {
+    padding: 20px 25px;
+}
 #map .paper-box {
     padding: 0px 0px 13px 0;
 }
@@ -341,35 +294,62 @@ h3.day {
     border: 1px solid #FEFEFE;
     margin-bottom: 20px;
     padding: 20px 30px;
-    @include box-shadow(#333 0 1px 2px inset, #FFF 0 1px 2px);
+    @include box-shadow(#333 0 0px 3px inset, #FFF 0 1px 2px);
+    @include border-radius(4px);
     ul {
         margin: 0;
         padding: 0;
     }
     li {
-        margin: 1.2em 0;
+        margin: .2em 0 .5em 0;
         font-size: 1.4em;
-        line-height: 1.2em;
-        padding: .8em .8em .4em .8em;
+        line-height: 1.34em;
+        padding: .8em .8em .8em .8em;
         border-bottom: 1px solid #AAA;
     }
     li:last-child {
         border: 0;
+        margin-bottom: 0; 
     }
     li span {
         font-size: 2.6em;
         display: block;
         margin-bottom: .45em;
         font-family: Georgia, serif;
+        @include text-shadow(#CECECE 2px 2px 0px);
     }
 }
-
 
 #page-content {
     margin-top: 50px;
     margin-bottom: 50px;
+    h2 {
+        margin-bottom: .9em;
+        color: #5f5a66;
+        font-size: 3em;
+        font-family: euphorigenic, serif;
+        font-weight: 100;
+    }
+    h2.huge {
+        font-size: 12em;
+        margin: 0;
+        line-height: 0.9em;
+    }
+    h3 {
+        margin-top: 1em;
+        margin-bottom: .6em;
+    }
 }
 
+#event p {
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+#event img {
+    width: 100%;
+    margin-bottom: 20px;
+}
 
 /*----------------------
 Activity
@@ -950,4 +930,51 @@ footer #tweets li p {
 .footer-bottom {
     font-size: 12px;
     opacity: 0.75;
+}
+
+@keyframes swinging {
+    0% { 
+        transform: rotate(0deg);
+    }
+    30% { 
+        transform: rotate(3deg);
+    }
+    100% { 
+        transform: rotate(0deg);
+    }
+}
+
+@-moz-keyframes swinging {
+    0% { 
+        -moz-transform:rotate(0deg);
+    }
+    30% { 
+        -moz-transform: rotate(3deg);
+    }
+    100% { 
+        -moz-transform:rotate(0deg);
+    }
+}
+
+@-webkit-keyframes swinging {
+    0% { 
+        -webkit-transform:rotate(0deg);
+    }
+    30% { 
+        -webkit-transform: rotate(3deg);
+    }
+    100% { 
+        -webkit-transform:rotate(0deg);
+    }
+}
+
+.huge {
+    color: #3C3C3C;
+    font-size: 8em;
+    line-height: 1em;
+}
+.medium {
+    color: #3C3C3C;
+    font-size: 4em;
+    line-height: 1em;
 }

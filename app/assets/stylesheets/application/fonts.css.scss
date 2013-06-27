@@ -1,0 +1,47 @@
+@font-face {
+    font: {
+       family: 'NexaFree';
+       weight: 'normal';
+       style: 'normal';
+    }
+    src: asset-url('Nexa_Free_Bold-webfont.eot', font);
+    src: asset-url('Nexa_Free_Bold-webfont.eot?#iefix', font) format('embedded-opentype'),
+         asset-url('Nexa_Free_Bold-webfont.woff', font) format('woff'),
+         asset-url('Nexa_Free_Bold-webfont.ttf', font) format('truetype'),
+         asset-url('Nexa_Free_Bold-webfont.svg#BPreplayRegular', font) format('svg');
+}
+
+@font-face {
+    font: {
+       family: 'SofiaPro';
+       weight: 'normal';
+       style: 'normal';
+    }
+    src: asset-url('SofiaProLight-webfont.eot', font);
+    src: asset-url('SofiaProLight-webfont.eot?#iefix', font) format('embedded-opentype'),
+         asset-url('SofiaProLight-webfont.woff', font) format('woff'),
+         asset-url('SofiaProLight-webfont.ttf', font) format('truetype'),
+         asset-url('SofiaProLight-webfont.svg#BPreplayRegular', font) format('svg');
+}
+
+@font-face {
+    font-family: 'ChunkFive';
+    src: url('Chunkfive-webfont.eot', font);
+    src: url('Chunkfive-webfont.eot?#iefix', font) format('embedded-opentype'),
+         url('Chunkfive-webfont.woff', font) format('woff'),
+         url('Chunkfive-webfont.ttf', font) format('truetype'),
+         url('Chunkfive-webfont.svg#ChunkFiveRegular', font) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'euphorigenic';
+    src: url('euphorigenic-webfont.eot', font);
+    src: url('euphorigenic-webfont.eot?#iefix', font) format('embedded-opentype'),
+         url('euphorigenic-webfont.woff', font) format('woff'),
+         url('euphorigenic-webfont.ttf', font) format('truetype'),
+         url('euphorigenic-webfont.svg#euphorigenic', font) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -5,19 +5,18 @@
   %body{ :class => "#{ controller.controller_name } preload" }
     = render 'chromeframe'
 
-    #layout.pure-g-r
-      = render 'flashes'
+    = render 'flashes'
 
-      -if controller.controller_name == "home"
-        = render 'header-home'
-      -else
-        = render 'header'
+    -if controller.controller_name == "home"
+      = render 'header-home'
+    -else
+      = render 'header'
 
-      = render 'navigation'
+    = render 'navigation'
 
-      = yield
+    = yield
 
-      = render 'footer'
+    = render 'footer'
 
     -# Javascript at the bottom for fast page loading
     = render 'javascripts'
