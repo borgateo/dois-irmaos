@@ -1,7 +1,7 @@
 $(function() {
   $('.fancybox').fancybox({
-        prevEffect : 'elastic',
-        nextEffect : 'elastic',
+        prevEffect : 'fade',
+        nextEffect : 'fade',
 
         closeBtn  : true,
         arrows    : true,
