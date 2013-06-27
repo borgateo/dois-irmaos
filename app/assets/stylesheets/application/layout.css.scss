@@ -8,6 +8,18 @@ body {
     background: url(/assets/fabric_plaid.png);
 }
 
+.preload * {
+  @include transition(none !important);
+}
+
+* {
+    -webkit-transform: translatez(0);
+    -moz-transform: translatez(0);
+    -ms-transform: translatez(0);
+    -o-transform: translatez(0);
+    transform: translatez(0);
+}
+
 /*----------------------
 Header
 ----------------------*/
@@ -233,12 +245,43 @@ nav .selected {
     width: 100%;
 }
 
+
 .localization .well {
     height: 260px;
 }
 
-.localization .well img {
-    margin-bottom: 30px;
+#map-canvas {
+    opacity: 1;
+    @include transition(all 2s ease);
+}
+#map-canvas.loading {
+    opacity: 0;
+}
+
+#marker {
+    position: relative;
+    @include transition(all 0.5s ease-in-out);
+    top: -30px;
+    margin-bottom: 15px;
+    opacity: 1;
+}
+
+#street {
+    @include transition(all 1.5s ease);
+    font-size: 1.2em;
+    opacity: 1;
+}
+.localization:hover #marker {
+    top: -60px; 
+}
+
+.localization.loading #marker {
+    top: -120px;
+    opacity: 0;
+}
+
+.localization.loading #street {
+    opacity: 0;
 }
 
 .email {
@@ -290,7 +333,7 @@ h3.day {
 }
 
 #map .paper-box {
-    padding: 0px 0px 27px 0;
+    padding: 0px 0px 13px 0;
 }
 
 .white-box {
@@ -319,11 +362,6 @@ h3.day {
         margin-bottom: .45em;
         font-family: Georgia, serif;
     }
-}
-
-#marker {
-    position: relative;
-    top: -60px;
 }
 
 
