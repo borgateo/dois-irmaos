@@ -38,7 +38,7 @@ header.fix {
 }
 
 .banner-pages {
-    background: url('/assets/flowers.jpg') center;
+    background: url('/assets/plaid.png') center;
 }
 
 .home-banner {
@@ -97,7 +97,7 @@ header.fix {
     position: relative;
     z-index: 999;
     left: 0;
-    top: -13px;
+    top: 30px;
 }
 
 #logo {
@@ -200,7 +200,8 @@ nav .selected {
 
 .navbar-pages {
     margin: 0 auto;
-    width: 420px;
+    max-width: 803px;
+    min-width: 350px
 }
 
 .huge {
