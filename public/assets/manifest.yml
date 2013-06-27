@@ -77,6 +77,8 @@ logo-small.png: logo-small-8a15f68c95609054511709550a6e403a.png
 logo-small/index.png: logo-small-8a15f68c95609054511709550a6e403a.png
 logo.png: logo-7b05ca7e1fb500ea45ab5aa9b18c4f51.png
 logo/index.png: logo-7b05ca7e1fb500ea45ab5aa9b18c4f51.png
+logo.psd: logo-532771e0cdbd4f8ba75c160eb6216c71.psd
+logo/index.psd: logo-532771e0cdbd4f8ba75c160eb6216c71.psd
 marker-small.png: marker-small-a540f90deebb50e32ae13e6a7272eda8.png
 marker-small/index.png: marker-small-a540f90deebb50e32ae13e6a7272eda8.png
 marker.png: marker-a4ddb9c5df20e3189ee4a97e170de2af.png
