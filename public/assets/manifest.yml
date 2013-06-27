@@ -73,8 +73,8 @@ heart.png: heart-83537c3b01aba64697413cfcff06c526.png
 heart/index.png: heart-83537c3b01aba64697413cfcff06c526.png
 location.png: location-313ff0b393a7626cea6c6e5dfad2db60.png
 location/index.png: location-313ff0b393a7626cea6c6e5dfad2db60.png
-logo-small.png: logo-small-8a15f68c95609054511709550a6e403a.png
-logo-small/index.png: logo-small-8a15f68c95609054511709550a6e403a.png
+logo-small.png: logo-small-86e31201a9113c02fae4d7341462193a.png
+logo-small/index.png: logo-small-86e31201a9113c02fae4d7341462193a.png
 logo.png: logo-7b05ca7e1fb500ea45ab5aa9b18c4f51.png
 logo/index.png: logo-7b05ca7e1fb500ea45ab5aa9b18c4f51.png
 logo.psd: logo-532771e0cdbd4f8ba75c160eb6216c71.psd
@@ -113,8 +113,8 @@ application.js: application-5718d81f68792a334ca01828646c4d3d.js
 application/index.js: application-5718d81f68792a334ca01828646c4d3d.js
 polyfills.js: polyfills-49a8fd6d5dc3e14f8e1666aeaa2acd49.js
 polyfills/index.js: polyfills-49a8fd6d5dc3e14f8e1666aeaa2acd49.js
-application.css: application-2594fa268df14e939687a4739077179e.css
-application/index.css: application-2594fa268df14e939687a4739077179e.css
+application.css: application-f7e3cd465063067bc51624dfa36f5073.css
+application/index.css: application-f7e3cd465063067bc51624dfa36f5073.css
 glyphicons-halflings-white.png: glyphicons-halflings-white-6cccd17a7aed91dbc0157d343c68c0d9.png
 glyphicons-halflings-white/index.png: glyphicons-halflings-white-6cccd17a7aed91dbc0157d343c68c0d9.png
 glyphicons-halflings.png: glyphicons-halflings-2851b489e8c39f8fad44fc10efb99c3e.png
