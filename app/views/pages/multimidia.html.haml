@@ -1,17 +1,27 @@
-.container#map
-  .row.section-intro
+#page-content.container
+  #multimedia
+    .row-fluid
+      .span
+        %h2.text-center
+          Images
 
-    %h1 Evento
+    .row-fluid
+      .span8
+        %ul
+          %li 
+            %a{:href => "/assets/2_b.jpg", :rel => "lightbox[test]", :title => "TITOLO"}
+              %img{:alt => "thumb-1", :src => "/assets/2_s.jpg", :width => "180"}
+          %li 
+            %a{:href => "/assets/1_b.jpg", :rel => "lightbox[test]", :title => "TITOLO"}
+              %img{:alt => "thumb-1", :src => "/assets/1_s.jpg", :width => "180"}
+          %li 
+            %a{:href => "/assets/2_b.jpg", :rel => "lightbox[test]", :title => "TITOLO"}
+              %img{:alt => "thumb-1", :src => "/assets/2_s.jpg", :width => "180"}
+          %li 
+            %a{:href => "/assets/1_b.jpg", :rel => "lightbox[test]", :title => "TITOLO"}
+              %img{:alt => "thumb-1", :src => "/assets/1_s.jpg", :width => "180"}
 
-
-    %a.fancybox{"data-fancybox-group" => "thumb", :href => "/assets/1_b.jpg"}
-      %img{:alt => "", :src => "/assets/1_s.jpg"}/
-    %a.fancybox{"data-fancybox-group" => "thumb", :href => "/assets/2_b.jpg"}
-      %img{:alt => "", :src => "/assets/2_s.jpg"}/
-
-
-- content_for(:fancybox) do
-  = javascript_include_tag :fancybox
-  = javascript_include_tag :fancybox_thumbs
-  = javascript_include_tag :fancybox_init
+- content_for(:lightbox) do
+  = javascript_include_tag :smooth_scroll
+  = javascript_include_tag :lightbox
 

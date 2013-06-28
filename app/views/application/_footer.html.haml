@@ -2,24 +2,24 @@
   .top-footer
   .container
     .row-fluid
-      .span6
+      .span7
         .row-fluid
-          %ul.span3.nav.nav-list
-            %li.nav-header Arraiá do Parque Dois Irmãos
+          %ul.span5.nav-list.nav
+            %li.nav-header Arraiá do Parque 2 Irmãos
             %li
-              %a{:href => "http://www.farmly.net/"} Home
+              %a{:href => "/"} Home
             %li
-              %a{:href => "http://www.farmly.net/about"} About Us
+              = link_to "Evento", evento_path
             %li
-              %a{:href => "http://www.farmly.net/about/#contact"} Contact
+              = link_to "Programação", programacao_path
             %li
-              %a{:href => "http://blog.farmly.net"} Blog
-          %ul.span4.nav.nav-list
-            %li.nav-header Legal
+              = link_to "Multimídia", multimidia_path
             %li
-              %a{:href => "http://www.farmly.net/privacy"} Privacy Policy
-        / row fluid end
-      / span6 end
+              = link_to "Localização", localizacao_path
+            %li
+              = link_to "Contato", contato_path
+          %ul.span4.nav-list
+            %li.nav-header Social
       #tweets.span6.pull-right
     / row end
     %hr/
@@ -27,8 +27,5 @@
       %p.span4.pull-left Copyright &copy; #{ Date.today.year }
       %p.text-right.span4.pull-right
         Made by
-        %a{:href => "http://www.matteoborgato.com"} Borteo
-    / row end
-  / container end
-/ footer end
+        %a{:href => "http://www.matteoborgato.com", :class => "author"} Borteo
   
