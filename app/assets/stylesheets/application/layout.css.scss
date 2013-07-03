@@ -87,6 +87,10 @@ header {
     z-index: 999;
     left: 0;
     top: 22px;
+    @include transition(all 0.2s ease-in-out);
+}
+#logo-small:hover {
+    top: 15px;
 }
 
 #logo {
@@ -254,7 +258,8 @@ h3.day {
     top: -30px;
 }
 
-.paper-box {
+.paper-box,
+.wood-box {
     background: url('/assets/stripes.png') #F9F0CD;
     width: 100%;
     height: 100%;
@@ -270,6 +275,13 @@ h3.day {
     }
 }
 
+.wood-box {
+    background: url('/assets/wood.png') #CCC;
+    border: 1px solid white;
+    @include box-shadow(#444 0 0 3px inset);
+    @include border-radius(3px);
+}
+
 #event .paper-box {
     padding: 20px 25px;
 }
@@ -283,7 +295,7 @@ h3.day {
     margin-bottom: 20px;
     padding: 20px 30px;
     @include box-shadow(#333 0 0px 3px inset, #FFF 0 1px 2px);
-    @include border-radius(4px);
+    @include border-radius(3px);
     ul {
         margin: 0;
         padding: 0;
@@ -356,22 +368,33 @@ h3.day {
     }
     li {
         float: left;
-        width: 200px;
-        height: 160px;
-        padding: 10px 20px 50px 20px;
+        padding: 8px 8px 22px;
         background: #fff;
         position: relative;
         -webkit-box-sizing: content-box;
         -moz-box-sizing: content-box;
         box-sizing: content-box;
         margin-bottom: 20px;
-        box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+        @include box-shadow(#777 0 1px 2px);
         z-index: 999;
         margin-right: 10px;
         margin-left: 10px;
+        @include rotate(2deg);
+        @include transition(all 0.2s ease-out);
     }
     li a {
         display: block;
+        -moz-cursor: -moz-zoom-in;
+        cursor: -webkit-zoom-in;
+    }
+
+    li:nth-child(odd) {
+        @include rotate(-3deg);
+    }
+
+    li:hover {
+        @include rotate(0deg);
+        opacity: 0.85;
     }
 }
 /*----------------------

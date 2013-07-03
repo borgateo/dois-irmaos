@@ -3,23 +3,15 @@
     .row-fluid
       .span
         %h2.text-center
-          Images
+          Fotos
 
     .row-fluid
-      .span8
+      .span.wood-box
         %ul
-          %li 
-            %a{:href => "/assets/2_b.jpg", :rel => "lightbox[test]", :title => "TITOLO"}
-              %img{:alt => "thumb-1", :src => "/assets/2_s.jpg", :width => "180"}
-          %li 
-            %a{:href => "/assets/1_b.jpg", :rel => "lightbox[test]", :title => "TITOLO"}
-              %img{:alt => "thumb-1", :src => "/assets/1_s.jpg", :width => "180"}
-          %li 
-            %a{:href => "/assets/2_b.jpg", :rel => "lightbox[test]", :title => "TITOLO"}
-              %img{:alt => "thumb-1", :src => "/assets/2_s.jpg", :width => "180"}
-          %li 
-            %a{:href => "/assets/1_b.jpg", :rel => "lightbox[test]", :title => "TITOLO"}
-              %img{:alt => "thumb-1", :src => "/assets/1_s.jpg", :width => "180"}
+          - (1..11).each do |i|
+            %li
+              %a{:href => "/assets/group1/#{i}.jpg", :rel => "lightbox[grupo1]", :title => "TITOLO-#{i}"}
+                %img{:alt => "thumb-#{i}", :src => "/assets/group1/thumbs/#{i}.jpg"}
 
 - content_for(:lightbox) do
   = javascript_include_tag :smooth_scroll
