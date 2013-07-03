@@ -1,1 +1,0 @@
-$(function(){$(".fancybox").fancybox({prevEffect:"fade",nextEffect:"fade",closeBtn:!0,arrows:!0,nextClick:!0,helpers:{thumbs:{width:50,height:50}}})});
