@@ -10,8 +10,9 @@
         %ul
           - (1..11).each do |i|
             %li
-              %a{:href => "http://borteo.s3.amazonaws.com/images/group1/#{i}.JPG", :rel => "lightbox[grupo1]", :title => "TITOLO-#{i}"}
+              %a{:href => "http://borteo.s3.amazonaws.com/images/group1/#{i}.JPG", :rel => "lightbox[grupo1]", :title => "#{i}"}
                 %img{:alt => "thumb-#{i}", :src => "http://borteo.s3.amazonaws.com/images/group1/thumbs/#{i}.JPG"}
+
 
 - content_for(:lightbox) do
   = javascript_include_tag :smooth_scroll
