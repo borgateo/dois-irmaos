@@ -11,7 +11,23 @@
           - (1..11).each do |i|
             %li
               %a{:href => "http://borteo.s3.amazonaws.com/images/group1/#{i}.JPG", :rel => "lightbox[grupo1]", :title => "#{i}"}
-                %img{:alt => "thumb-#{i}", :src => "http://borteo.s3.amazonaws.com/images/group1/thumbs/#{i}.JPG"}
+                %img{:alt => "thumb-#{i}", :src => "/assets/loading.gif", "data-src" => "http://borteo.s3.amazonaws.com/images/group1/thumbs/#{i}.JPG"}
+
+    .row-fluid
+      .span.wood-box
+        %ul
+          - (1..11).each do |i|
+            %li
+              %a{:href => "http://borteo.s3.amazonaws.com/images/group2/#{i}.JPG", :rel => "lightbox[grupo2]", :title => "#{i}"}
+                %img{:alt => "thumb-#{i}", :src => "/assets/loading.gif", "data-src" => "http://borteo.s3.amazonaws.com/images/group2/thumbs/#{i}.JPG"}
+
+    .row-fluid
+      .span.wood-box
+        %ul
+          - (1..11).each do |i|
+            %li
+              %a{:href => "http://borteo.s3.amazonaws.com/images/group3/#{i}.JPG", :rel => "lightbox[grupo3]", :title => "#{i}"}
+                %img{:alt => "thumb-#{i}", :src => "/assets/loading.gif", "data-src" => "http://borteo.s3.amazonaws.com/images/group3/thumbs/#{i}.JPG"}
 
 
 - content_for(:lightbox) do

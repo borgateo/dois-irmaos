@@ -1,38 +1,21 @@
 @font-face {
-    font: {
-       family: 'NexaFree';
-       weight: 'normal';
-       style: 'normal';
-    }
-    src: asset-url('Nexa_Free_Bold-webfont.eot', font);
-    src: asset-url('Nexa_Free_Bold-webfont.eot?#iefix', font) format('embedded-opentype'),
-         asset-url('Nexa_Free_Bold-webfont.woff', font) format('woff'),
-         asset-url('Nexa_Free_Bold-webfont.ttf', font) format('truetype'),
-         asset-url('Nexa_Free_Bold-webfont.svg#BPreplayRegular', font) format('svg');
+    font-family: 'Trocchi';
+    src: url('/assets/Trocchi-webfont.eot');
+    src: url('/assets/Trocchi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/Trocchi-webfont.woff') format('woff'),
+         url('/assets/Trocchi-webfont.ttf') format('truetype'),
+         url('/assets/Trocchi-webfont.svg#TrocchiBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font: {
-       family: 'SofiaPro';
-       weight: 'normal';
-       style: 'normal';
-    }
-    src: asset-url('SofiaProLight-webfont.eot', font);
-    src: asset-url('SofiaProLight-webfont.eot?#iefix', font) format('embedded-opentype'),
-         asset-url('SofiaProLight-webfont.woff', font) format('woff'),
-         asset-url('SofiaProLight-webfont.ttf', font) format('truetype'),
-         asset-url('SofiaProLight-webfont.svg#BPreplayRegular', font) format('svg');
-}
-
-@font-face {
-    font: {
-       family: 'euphorigenic';
-       weight: 'normal';
-       style: 'normal';
-    }
-    src: asset-url('euphorigenic-webfont.eot', font);
-    src: asset-url('euphorigenic-webfont.eot?#iefix', font) format('embedded-opentype'),
-         asset-url('euphorigenic-webfont.woff', font) format('woff'),
-         asset-url('euphorigenic-webfont.ttf', font) format('truetype'),
-         asset-url('euphorigenic-webfont.svg#euphorigenic', font) format('svg');
+    font-family: 'TrocchiBold';
+    src: url('/assets/Trocchi-Bold-webfont.eot');
+    src: url('/assets/Trocchi-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/Trocchi-Bold-webfont.woff') format('woff'),
+         url('/assets/Trocchi-Bold-webfont.ttf') format('truetype'),
+         url('/assets/Trocchi-Bold-webfont.svg#TrocchiBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }

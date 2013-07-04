@@ -20,6 +20,10 @@ body, html {
     transform: translatez(0);
 }
 
+
+h1, h2, h3, h4 {
+    font-family: 'Trocchi', Arial, sans-serif;
+}
 /*----------------------
     Header
 ----------------------*/
@@ -63,34 +67,20 @@ header {
     background-size: 100% 100%;
     background-size: cover;
 }
-.banner-2{
+.banner-2 {
     background: url('/assets/banner2.jpg') center;
     background-size: 100% 100%;
     background-size: cover;
 }
 
-.home-banner h2 {
-    padding-bottom: 0.4em;
-    font-size: 48px;
-    font-weight: bold;
-    line-height: 1.15em;
-}
-
-.home-banner p {
-    font-size: 24px;
-    width: 100%;
-    line-height: 1.15em;
-}
-
 #logo-small {
     position: relative;
     z-index: 999;
-    left: 0;
     top: 22px;
     @include transition(all 0.2s ease-in-out);
 }
 #logo-small:hover {
-    top: 15px;
+    top: 12px;
 }
 
 #logo {
@@ -106,10 +96,29 @@ header {
     -webkit-transform-origin: right;
 }
 
+#flags-right,
+#flags-left {
+    height: 203px;
+    width: 219px;
+    position: absolute;
+    top: -12px;
+    z-index: -1;
+} 
+#flags-right {
+    background: url(/assets/bandierine1.png) top left no-repeat;
+    right: 0;
+}
+#flags-left {
+    background: url(/assets/bandierine.png) top left no-repeat;
+    left: 0;
+}
+
+
 /*----------------------
     Navigation
 ----------------------*/
 nav {
+    font-family: 'TrocchiBold', Arial, sans-serif;
     width: 100%;
     height: 128px;
     background: url(/assets/bg-nav.png) repeat-x top left;
@@ -131,10 +140,10 @@ nav li {
     a,
     a:visited {
         position: relative;
-        font-size: 2.2em;
+        font-size: 2em;
         height: 100%;
         letter-spacing: -2;
-        line-height: 2.1em;
+        line-height: 2.4em;
         color: #F6EDD8;
         cursor: pointer;
         font-weight: 200;
@@ -168,27 +177,28 @@ nav .selected {
     Pages
 ----------------------*/
 
-#contacts p {
+#event p {
     font-weight: 200;
+}
+
+#contacts p {
     height: 35px;
     line-height: 35px;
-    padding-left: 50px;
-    font-size: 1.2em;
+    font-size: 1.4em;
+    font-weight: 100;
 }
 #map p {
-    font-weight: 200;
-    height: 20px;
-    line-height: 20px;
-    font-size: 1.2em;
+    font-weight: 100;
+    line-height: 1em;
+    font-size: 1.4em;
 }
 #map-canvas {
-    height: 300px;
+    height: 320px;
     width: 100%;
 }
 
-
-.localization .well {
-    height: 260px;
+#map .paper-box {
+    padding: 0 0 10px 0;
 }
 
 #map-canvas {
@@ -225,25 +235,54 @@ nav .selected {
     opacity: 0;
 }
 
-.email {
-    background: url(/assets/envelop.png) center left no-repeat;
+.loading {
+    .email,
+    .phone,
+    .address,
+    .bookmark {
+        @include rotate(-360deg);
+    }
 }
-.phone {
-    background: url(/assets/phone.png) center left no-repeat;
+
+.email,
+.phone,
+.address,
+.bookmark {
+    height: 32px;
+    width: 32px;
+    margin: 0 8px;
+    display: inline-block;
+    vertical-align: middle;
+    @include transition(all 0.5s ease-in-out);
+    @include rotate(0deg);
+}
+
+.bookmark {
+    background: url(/assets/bookmark.png) center center;
+    transition-delay: 0.2s;
+    -webkit-transition-delay: 0.2s; 
 }
 .address {
-    background: url(/assets/location.png) center left no-repeat;
+    background: url(/assets/location.png) center center;
+    transition-delay: 0.4s;
+    -webkit-transition-delay: 0.4s;
 }
-.bookmark {
-    background: url(/assets/bookmark.png) center left no-repeat;
+.phone {
+    background: url(/assets/phone.png) center center;
+    transition-delay: 0.6s;
+    -webkit-transition-delay: 0.6s;
+}
+.email {
+    background: url(/assets/envelop.png) center center;
+    transition-delay: 0.8s;
+    -webkit-transition-delay: 0.8s;
 }
 
-section {
-    margin: 50px 0;
+#programma .paper-box {
+    font-family: Trocchi, Arial, sans-serif;
 }
 
-
-h3.day {
+#programma .day {
     background: url('/assets/red-ribbon.png') top left no-repeat;
     height: 59px;
     width: 99px;
@@ -251,7 +290,6 @@ h3.day {
     font-size: 3em;
     padding-top: 8px;
     padding-left: 10px;
-    font-family: Georgia, serif;
     @include text-shadow(rgba(0,0,0,0.2) 1px 2px 0);
     position: absolute;
     left: -10px;
@@ -285,9 +323,6 @@ h3.day {
 #event .paper-box {
     padding: 20px 25px;
 }
-#map .paper-box {
-    padding: 0px 0px 13px 0;
-}
 
 .white-box {
     background: url('/assets/stripes.png') #FFFEFE;
@@ -296,11 +331,13 @@ h3.day {
     padding: 20px 30px;
     @include box-shadow(#333 0 0px 3px inset, #FFF 0 1px 2px);
     @include border-radius(3px);
+    font-weight: 100;
     ul {
         margin: 0;
         padding: 0;
     }
     li {
+        text-align: center;
         margin: .2em 0 .5em 0;
         font-size: 1.4em;
         line-height: 1.34em;
@@ -315,7 +352,7 @@ h3.day {
         font-size: 2.6em;
         display: block;
         margin-bottom: .45em;
-        font-family: Georgia, serif;
+        font-family: Trocchi, Arial, sans-serif;
         @include text-shadow(#CECECE 2px 2px 0px);
     }
 }
@@ -327,13 +364,12 @@ h3.day {
         margin-bottom: .9em;
         color: #5f5a66;
         font-size: 3em;
-        font-family: euphorigenic, serif;
-        font-weight: 100;
     }
     h2.huge {
-        font-size: 12em;
+        font-size: 8.5em;
         margin: 0;
-        line-height: 0.9em;
+        letter-spacing: -5px;
+        line-height: 1.6em;
     }
     h3 {
         margin-top: 1em;
@@ -386,6 +422,8 @@ h3.day {
         display: block;
         -moz-cursor: -moz-zoom-in;
         cursor: -webkit-zoom-in;
+        height: 150px;
+        width: 150px;
     }
 
     li:nth-child(odd) {
@@ -397,6 +435,9 @@ h3.day {
         opacity: 0.85;
     }
 }
+
+
+
 /*----------------------
 Activity
 ----------------------*/
