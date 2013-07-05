@@ -33,6 +33,14 @@
                   %a{:href => "http://borteo.s3.amazonaws.com/images/group3/#{i}.JPG", :rel => "lightbox[grupo3]", :title => "#{i}"}
                     %img{:alt => "thumb-#{i}", :src => "/assets/loading.gif", "data-src" => "http://borteo.s3.amazonaws.com/images/group3/thumbs/#{i}.JPG"}
 
+        .row-fluid
+          .span.wood-box
+            %ul
+              - (1..11).each do |i|
+                %li
+                  %a{:href => "http://borteo.s3.amazonaws.com/images/group4/#{i}.JPG", :rel => "lightbox[grupo4]", :title => "#{i}"}
+                    %img{:alt => "thumb-#{i}", :src => "/assets/loading.gif", "data-src" => "http://borteo.s3.amazonaws.com/images/group4/thumbs/#{i}.JPG"}
+
     #second-day.group
       .row-fluid
         %h3 Secondo dia
@@ -42,8 +50,15 @@
             %ul
               - (1..11).each do |i|
                 %li
-                  %a{:href => "http://borteo.s3.amazonaws.com/images/group4/#{i}.JPG", :rel => "lightbox[grupo4]", :title => "#{i}"}
-                    %img{:alt => "thumb-#{i}", :src => "/assets/loading.gif", "data-src" => "http://borteo.s3.amazonaws.com/images/group4/thumbs/#{i}.JPG"}
+                  %a{:href => "http://borteo.s3.amazonaws.com/images/group5/#{i}.JPG", :rel => "lightbox[grupo5]", :title => "#{i}"}
+                    %img{:alt => "thumb-#{i}", :src => "/assets/loading.gif", "data-src" => "http://borteo.s3.amazonaws.com/images/group5/thumbs/#{i}.JPG"}
+        .row-fluid
+          .span.wood-box
+            %ul
+              - (1..11).each do |i|
+                %li
+                  %a{:href => "http://borteo.s3.amazonaws.com/images/group6/#{i}.JPG", :rel => "lightbox[grupo6]", :title => "#{i}"}
+                    %img{:alt => "thumb-#{i}", :src => "/assets/loading.gif", "data-src" => "http://borteo.s3.amazonaws.com/images/group6/thumbs/#{i}.JPG"}
 
 
 - content_for(:lightbox) do
