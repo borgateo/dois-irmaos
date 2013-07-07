@@ -192,6 +192,19 @@ nav .selected {
     cursor: pointer;
 }
 
+#page-content .group h4 {
+    color: #FEFEFE;
+    @include text-shadow(rgba(0,0,0,0.2) 1px 2px 0);
+    font-size: 1.4em;
+    padding: .4em 0;
+    margin: .8em auto .4em;
+    text-align: center;
+    background: #7c9464 url('/assets/stripes.png');
+    width: 40%;
+    border: 1px solid #68834c;
+    @include box-shadow(#9cb07e 1px 1px 0px inset, #9cb07e -1px -1px 0px inset, #888 0px 1px 2px);
+}
+
 #multimedia .group-content {
     display: none;
 }
@@ -334,7 +347,7 @@ nav .selected {
 
 .wood-box {
     background: url('/assets/wood.png') #CCC;
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.05);
     @include box-shadow(#222 0 0 3px inset);
     @include border-radius(3px);
 }
