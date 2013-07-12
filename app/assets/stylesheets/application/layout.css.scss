@@ -31,7 +31,7 @@ header {
     width: 100%;
     position: relative;
     padding: 0;
-    height: 1em;
+    height: 12px;
     background: url(/assets/zigzag.png) bottom left repeat-x;
     bottom: -12px;
     z-index: 10;
@@ -49,7 +49,7 @@ header {
 }
 
 .banner-pages {
-    background: url('/assets/plaid.png') center;
+    background: url('/assets/flower.png') center;
 }
 
 .home-banner {
@@ -86,7 +86,7 @@ header {
 #logo {
     position: absolute;
     z-index: 999;
-    left: 0;
+    left: 2%;
     top: -12px;
     animation: swinging 4s infinite ease-in-out;
     transform-origin: right;
@@ -137,6 +137,7 @@ nav li {
     margin-top: 22px;
     text-align: center;
     border: 1px solid transparent;
+    @include transition(all 0.2s ease-in);
     a,
     a:visited {
         position: relative;
@@ -346,7 +347,7 @@ nav .selected {
 }
 
 .wood-box {
-    background: url('/assets/wood.png') #CCC;
+    background: url('/assets/wood.png') #EAD3B3;
     border: 1px solid rgba(255,255,255,0.05);
     @include box-shadow(#222 0 0 3px inset);
     @include border-radius(3px);
