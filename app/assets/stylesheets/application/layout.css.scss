@@ -496,12 +496,14 @@ nav .selected {
 }
 
 .ranking .span4 {
-    position: relative;
-    @include transition(all 0.4s ease-in-out);
     @include border-radius(4px);
 }
-.ranking .span4:hover {
-    top: -5px;
+.ranking .span4 img {
+    position: relative;
+    @include transition(all 0.4s ease-in-out);
+}
+.ranking .span4:hover img {
+    top: -10px;
     @include rotate(-5deg);
     background: rgba(255,255,255, 0.08);
 }
@@ -574,10 +576,23 @@ footer .author {
 footer ul {
     list-style: none;
 }
-footer .sponsor li {
-    color: black;
-    font-size: 1.3em;
+footer .sponsor { 
+    h3 {
+        color: #000;
+    }
+    li {
+        color: #333;
+        font-size: 1.3em;
+    }
+    .nav-header {
+        color: #000;
+        font-size: 1.9em;
+    }
 }
+footer .sponsorship li.text-center {
+    margin-top: 15px;
+}
+
 
 @keyframes swinging {
     0% { 

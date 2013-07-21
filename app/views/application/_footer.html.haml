@@ -4,7 +4,7 @@
     .row-fluid
       .span
         .row-fluid
-          %ul.span4.nav-list.nav
+          %ul.span2.nav-list.nav
             %li.nav-header Arraiá do Parque Dois Irmãos
             %li
               %a{:href => "/"} Home
@@ -18,15 +18,24 @@
               = link_to "Localização", localizacao_path
             %li
               = link_to "Contato", contato_path
-          %ul.span7.nav-list.sponsor
-            %li.nav-header Apoio
-            %li 
-              %img{:src => "/assets/logo-ceara.png"}/
-              %img{:src => "/assets/logo-prefeitura.png"}/
-            %li.pull-right 
-              Secretaria de Cultura de Fortaleza - Secultfor
-      / #tweets.span6.pull-right
-    / row end
+          .span10.sponsor 
+            %h3.text-center Nossos agradecimentos 
+            %ul.span6.nav-list.sponsor
+              %li.nav-header Apoio
+              %li 
+                %img{:src => "/assets/logo-ceara.png"}/
+              %li
+                %img{:src => "/assets/logo-prefeitura.png"}/
+              %li
+                Secretaria de Cultura de Fortaleza - Secultfor
+            %ul.span4.nav-list.sponsor.sponsorship
+              %li.nav-header Patrocinadores
+              %li.text-center
+                %img{:src => "/assets/logordosol.png"}/
+              %li.text-center
+                %img{:src => "/assets/logoCME.png"}/
+              %li.text-center 
+                %img{:src => "/assets/logoAteneu.png"}/
     %hr/
     .row-fluid.footer-bottom
       %p.span4.pull-left Copyright &copy; #{ Date.today.year }
