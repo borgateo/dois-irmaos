@@ -85,6 +85,12 @@ logo.png: logo-6bfb3abc30d4e7d7206c73ecfa9b089d.png
 logo/index.png: logo-6bfb3abc30d4e7d7206c73ecfa9b089d.png
 logo.psd: logo-de024068d6bffe5b3926bc2dcbd1022b.psd
 logo/index.psd: logo-de024068d6bffe5b3926bc2dcbd1022b.psd
+logoAteneu.png: logoAteneu-bfab2d55f5cb443ed858b2aa1b6020f1.png
+logoAteneu/index.png: logoAteneu-bfab2d55f5cb443ed858b2aa1b6020f1.png
+logoCME.png: logoCME-e4de0a04e1d11d34c7df61c9ea3d05e0.png
+logoCME/index.png: logoCME-e4de0a04e1d11d34c7df61c9ea3d05e0.png
+logordosol.png: logordosol-7398278e3cee42ac1ec2a2c1a65b5af5.png
+logordosol/index.png: logordosol-7398278e3cee42ac1ec2a2c1a65b5af5.png
 marker-small.png: marker-small-0f9a97e53094eac41384a26bbcd45e9c.png
 marker-small/index.png: marker-small-0f9a97e53094eac41384a26bbcd45e9c.png
 marker.png: marker-a4ddb9c5df20e3189ee4a97e170de2af.png
@@ -147,8 +153,8 @@ smooth_scroll.js: smooth_scroll-d45cd0380225558efdda3448c2341c21.js
 smooth_scroll/index.js: smooth_scroll-d45cd0380225558efdda3448c2341c21.js
 unveil.js: unveil-1e15d0a47945ca4c0825f4317b069606.js
 unveil/index.js: unveil-1e15d0a47945ca4c0825f4317b069606.js
-application.css: application-679ae08980405f169409abe4e2849a6f.css
-application/index.css: application-679ae08980405f169409abe4e2849a6f.css
+application.css: application-ae268a4fec35067e0671b14671223be4.css
+application/index.css: application-ae268a4fec35067e0671b14671223be4.css
 glyphicons-halflings-white.png: glyphicons-halflings-white-6cccd17a7aed91dbc0157d343c68c0d9.png
 glyphicons-halflings-white/index.png: glyphicons-halflings-white-6cccd17a7aed91dbc0157d343c68c0d9.png
 glyphicons-halflings.png: glyphicons-halflings-2851b489e8c39f8fad44fc10efb99c3e.png
