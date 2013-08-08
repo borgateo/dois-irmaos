@@ -1,3 +1,16 @@
+/ AddThis Button BEGIN
+.addthis_toolbox.addthis_floating_style.addthis_32x32_style{:style => "left:10px;bottom:530px;z-index:999999"}
+  %a.addthis_button_preferred_1
+  %a.addthis_button_preferred_2
+  %a.addthis_button_preferred_3
+  %a.addthis_button_preferred_4
+  %a.addthis_button_compact
+:javascript
+  var addthis_config = {"data_track_addressbar":true};
+%script{:src => "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5203f10e100245b9", :type => "text/javascript"}
+/ AddThis Button END
+
+
 %footer.footer.clearfix
   .top-footer
   .container
@@ -19,7 +32,7 @@
             %li
               = link_to "Contato", contato_path
           .span10.sponsor 
-            %h3.text-center Nossos agradecimentos 
+            %h3 Nossos agradecimentos 
             %ul.span6.nav-list.sponsor
               %li.nav-header Apoio
               %li 

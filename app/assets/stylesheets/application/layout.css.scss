@@ -127,8 +127,8 @@ nav {
 nav ul {
     margin: 0 auto;
     text-align: center;
-    overflow: visible;
-    width: 72%;
+    overflow: hidden;
+    width: 53%;
     min-width: 1020px;
 }
 nav li {
@@ -576,17 +576,23 @@ footer .author {
 footer ul {
     list-style: none;
 }
-footer .sponsor { 
+
+footer .span6.sponsor {
+    border-left: 1px solid rgba(0,0,0,0.2);
+    border-right: 1px solid rgba(0,0,0,0.2);
+}
+footer .sponsor {
     h3 {
-        color: #111;
+        color: rgba(0,0,0,0.4);
+        text-shadow: 0 1px 0px rgba(255,255,255,0.5);
     }
     li {
-        color: #222;
-        font-size: 1.3em;
+        color: #333;
+        font-size: 1.2em;
     }
     .nav-header {
-        color: #111;
-        font-size: 1.8em;
+        color: #333;
+        font-size: 1.5em;
     }
 }
 footer .sponsorship li.text-center {
