@@ -1,9 +1,8 @@
-== Fatti e Pupe
+== Parque Dois Irmaos
 
-un progetto in via di sviluppo
+Simple Web site developed for an event.
 
 ---
 
-* DB: Mongoid - MongoDB simplifies development by eliminating the schemas and migrations
-* Autotenticazione: Devise
-* ENV (Heroku): Figaro (application.yml)
+Ruby on Rails project w/o DB made to be deployed in Heroku.
+Social Network private-tokens stored using Figaro
